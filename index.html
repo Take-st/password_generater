@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Password Generater</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="back">
+      <div class="top-container">
+        <h2>パスワードジェネレーター</h2>
+      </div>
+      <div class="container">
+        <p><input type="text" id="result"></p>
+        <p><div id="btn">Generate Password</div></p>
+        <fieldset>
+          <legend>Setting</legend>
+          <p>
+            パスワードの長さ(<span id="label">8</span>文字):
+            <input type="range" id="slider" value="8" min="8" max="14">
+          </p>
+          <p>
+            覚えやすいジャンルを選んでね
+            <select id="genres">
+              <option>fruits</option>
+              <option selected>vegetables</option>
+              <option>sports</option>
+            </select>
+          </p>
+          <p>
+            数字を含める？<input type="checkbox" id="numbers">
+            記号を含める？<input type="checkbox" id="symbols">
+          </p>
+          <p>
+            強度を高める？ <input type="checkbox" id="trans">
+          </p>
+        </fieldset>
+
+      </div>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
